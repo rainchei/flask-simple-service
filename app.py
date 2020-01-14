@@ -8,3 +8,7 @@ def hello_world():
 @app.route('/health')
 def health():
     return 'I am healthy!'
+
+
+if __name__ == "__main__":
+    app.run(debug=True, host='0.0.0.0')
